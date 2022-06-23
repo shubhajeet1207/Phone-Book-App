@@ -1,0 +1,21 @@
+<nav id="navbar-example2" class="navbar bg-light px-3">
+  <a class="navbar-brand" href="{% url 'home' %}">Phone Book</a>
+  <ul class="nav nav-pills">
+    <li class="nav-item">
+      <a class="nav-link" href="{% url 'home' %}">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="{% url 'about' %}">About</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="{% url 'contacts' %}">Contact</a>
+    </li>
+    <li class="nav-item">
+       {% if request.user.is_authenticated %}
+        <a href="{% url 'logout' %}" class="nav-link">Logout</a>
+        {% else %}
+        <a href="{% url 'login' %}" class="nav-link">Login</a>
+        {% endif %}
+    </li>
+  </ul>
+</nav>
