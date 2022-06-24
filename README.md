@@ -28,5 +28,26 @@ Following features are available/unavailable to the Users:
 - [x] Can view, create, update, and delete admin users.
 - [x] Can view, create, update, and delete numbers/users.
 
+#### Installation Guide
+
+Follow the steps below for setting up the project into your System:
+1. Activate the virtual environment first to stay away from verson conflicts.
+```python
+virtualenv venv
+```
+2. Now activate the virtual environment which is being created. 
+```python
+.\venv\Scripts\activate
+```
+3. Now Run the server
+```python
+python manage.py runserver
+```
+**Note -** If any changes made in models.py file than user need to migarte the changes made in the models to the production database(i.e. SQLite3).
+For this following command would be used:
+```python
+python manage.py makemigrations
+python manage.py migrate
+```
 
 
