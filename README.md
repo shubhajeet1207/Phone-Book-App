@@ -7,7 +7,7 @@
 ## Screen Shots 🎞
 <div align="center">
 
-[Screen Shot](https://github.com/shubhajeet1207/Phone-Book-App/blob/master/phonebook.png)
+[Screen Shot](https://github.com/shubhajeet1207/Phone-Book-App/tree/master/screen%20shots)
 </div>
 
 ## Features 🌟
